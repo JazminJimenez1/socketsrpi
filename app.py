@@ -1,6 +1,7 @@
 from flask import Flask, render_template, session, request, jsonify, current_app, copy_current_request_context
 from flask_socketio import SocketIO
 from flask_socketio import send, emit
+from flask_cors import CORS
 from subprocess import call
 import requests
 import RPi.GPIO as gpio
@@ -36,6 +37,7 @@ while True:
 
 """
 app = Flask(__name__)
+cors = CORS(app)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
 press_counter = 1

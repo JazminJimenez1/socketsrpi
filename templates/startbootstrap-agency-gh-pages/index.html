@@ -64,8 +64,12 @@
     </div>
   </header>
   <!--modal-->
+
+  <div id="colorSignal">
+
+  </div>
 <!-- Modal -->
-<div id="modalCorrecto" class="modal fade" role="dialog">
+<div id="modalCorrecto1" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -78,12 +82,92 @@
         <p>Correcto.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Listo</button>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#pregunta2"></a>
       </div>
     </div>
 
   </div>
 </div>
+<div id="modalCorrecto2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content" style="background-color:greenyellow">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Tu respuesta es:</h4>
+        </div>
+        <div class="modal-body">
+          <p>Correcto.</p>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#pregunta3"></a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <div id="modalCorrecto3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content" style="background-color:greenyellow">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Tu respuesta es:</h4>
+          </div>
+          <div class="modal-body">
+            <p>Correcto.</p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#pregunta4"></a>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+    <div id="modalCorrecto4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content" style="background-color:greenyellow">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Tu respuesta es:</h4>
+            </div>
+            <div class="modal-body">
+              <p>Correcto.</p>
+            </div>
+            <div class="modal-footer">
+              <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#pregunta5"></a>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+      <div id="modalCorrecto5" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color:greenyellow">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Tu respuesta es:</h4>
+              </div>
+              <div class="modal-body">
+                <p>Correcto.</p>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#pregunta5"></a>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+
 <div id="modalIncorrecto" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
@@ -116,7 +200,7 @@
         </div>
 
       </div>
-      <div class="row">
+      <div class="row" id="pregunta1">
         <div class="col-lg-12 text-center">
           <h3 class="section-subheading text-muted">QUE HACES SI?</h3>
           <h4 class="section-subheading text-muted">1-ALGUIEN TE PIDE QUE TE SAQUES LA ROPA PARA MIRARTE: </h4>
@@ -126,14 +210,14 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-4a.png" alt="">
-            <input id="preguntas" type="button" style="color: black;" value= "a)Tú dices que bueno y te sacas la ropa." data-toggle="modal" data-target="#modalIncorrecto" style="background-color:blue"> 
+            <input id="colorSignala" type="button" style="color: black;" value= "a)Tú dices que bueno y te sacas la ropa." data-toggle="modal" data-target="#modalIncorrecto" style="background-color:blue"> 
             <p class="text-muted"> </p>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-4b.png" alt="">
-            <input type="button" style="color: black;" value= "b)Te sientes incómodo o incómoda
+            <input id="colorSignalb" type="button" style="color: black;" value= "b)Te sientes incómodo o incómoda
       y no sabes qué hacer." data-toggle="modal" data-target="#modalIncorrecto" style="background-color:crimson">
             <p class="text-muted">.</p>
           </div>
@@ -141,8 +225,8 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-4c.png" alt="">
-            <input type="button" style="color: black;" value= "c)Le dices que no y te vas, porque
-      crees que eso no es bueno." data-toggle="modal" data-target="#modalCorrecto">
+            <input  id="colorSignalc" type="button" style="color: black;" value= "c)Le dices que no y te vas, porque
+      crees que eso no es bueno." data-toggle="modal" data-target="#modalCorrecto1">
             <p class="text-muted">.</p>
           
         </div>
@@ -153,7 +237,7 @@
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row" id="pregunta2">
         <div class="col-lg-12 text-center">
           <h4 class="section-subheading text-muted">2-ALGUIEN MÁS GRANDE QUE TÚ AMENAZA CON PEGARTE SI NO HACES LO QUE TE PIDE:</h4>
         </div>
@@ -162,30 +246,30 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-3c.png" alt="">
-            <input type="button" style="color: black;" value="a)No sabes que hacer y lloras."data-toggle="modal" data-target="#modalIncorrecto">
+            <input id="colorSignala" type="button" style="color: black;" value="a)No sabes que hacer y lloras."data-toggle="modal" data-target="#modalIncorrecto">
             <p class="text-muted"></p>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-3b.png" alt="">
-            <input type="button" style="color: black;" value="b)Arrancas y le cuentas a una
-       persona en quien tienes confianza."data-toggle="modal" data-target="#modalCorrecto">
+            <input id="colorSignalb" type="button" style="color: black;" value="b)Arrancas y le cuentas a una
+       persona en quien tienes confianza."data-toggle="modal" data-target="#modalCorrecto2">
             <p class="text-muted"></p>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-3a.png" alt="">
-            <input type="button" style="color: black;" value="c)Le obedeces porque tienes miedo."data-toggle="modal" data-target="#modalIncorrecto">
+            <input id="colorSignalc" type="button" style="color: black;" value="c)Le obedeces porque tienes miedo."data-toggle="modal" data-target="#modalIncorrecto">
             <p class="text-muted"></p>
-          
+            
         </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row" id="pregunta3">
         <div class="col-lg-12 text-center">
           <h4 class="section-subheading text-muted">3-TE GUSTARÍA HABLAR DE ALGO QUE TE HAN HECHO, PERO TIENES MIEDO QUE NO TE CREAN:</h4>
         </div>
@@ -194,14 +278,14 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-5a.png" alt="">
-            <input type="button" style="color: black;" value="a)Buscas hablar con alguien que te crea." data-toggle="modal" data-target="#modalCorrecto">
+            <input id="colorSignala" type="button" style="color: black;" value="a)Buscas hablar con alguien que te crea." data-toggle="modal" data-target="#modalCorrecto3">
             <p class="text-muted"></p>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-5c.png" alt="">
-            <input type="button" style="color: black;" value="b)Piensas que no te van a creer 
+            <input id="colorSignalb" type="button" style="color: black;" value="b)Piensas que no te van a creer 
     o se van a enojar contigo." data-toggle="modal" data-target="#modalIncorrecto">
             <p class="text-muted"></p>
           </div>
@@ -209,7 +293,7 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-5b.png" alt="">
-            <input type="button" style="color: black;" value="c)Decides no hablar con nadie." data-toggle="modal" data-target="#modalIncorrecto">
+            <input id="colorSignalc" type="button" style="color: black;" value="c)Decides no hablar con nadie." data-toggle="modal" data-target="#modalIncorrecto">
             <p class="text-muted"></p>
           
         </div>
@@ -217,7 +301,7 @@
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row" id="pregunta4">
         <div class="col-lg-12 text-center">
           <h4 class="section-subheading text-muted">4-ALGUIEN QUE TÚ CONOCES COMIENZA A TOCARTE EN PARTES PRIVADAS Y TE DICE QUE NO SE LO CUENTES A NADIE:</h4>
         </div>
@@ -226,7 +310,7 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-6b.png" alt="">
-            <input type="button" style="color: black;" value="a)Te incomodas pero te dejas 
+            <input id="colorSignala" type="button" style="color: black;" value="a)Te incomodas pero te dejas 
     tocar porque dudas que es persona
     te quiera hacer daño." data-toggle="modal" data-target="#modalIncorrecto">
             <p class="text-muted"></p>
@@ -235,16 +319,16 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-6c.png" alt="">
-            <input type="button" style="color: black;" value="b)Te alejas y buscas alguien a quien
+            <input id="colorSignalb" type="button" style="color: black;" value="b)Te alejas y buscas alguien a quien
  contarle ya que piensas que nadie
-  debe tocar tus partes privadas." data-toggle="modal" data-target="#modalCorrecto">
+  debe tocar tus partes privadas." data-toggle="modal" data-target="#modalCorrecto4">
             <p class="text-muted"></p>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto " src="img/dibujos/pregunta-6a.png" alt="">
-            <input type="button" style="color: black;" value="c)Te dejas tocar ya que es 
+            <input id="colorSignalc" type="button" style="color: black;" value="c)Te dejas tocar ya que es 
       alguien a quien conoces." data-toggle="modal" data-target="#modalIncorrecto">
             <p class="text-muted"></p>
           
@@ -253,7 +337,7 @@
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row" id="pregunta5">
         <div class="col-lg-12 text-center">
           <h4 class="section-subheading text-muted">5-UN MIEMBRO DE TU FAMILIA TE HA HECHO ALGO Y TE DICE QUE NO LE CUENTES A NADIE PORQUE TE VAN A HECHAR LA CULPA:</h4>
         </div>
@@ -261,8 +345,8 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto " src="img/dibujos/pregunta-a.png" alt="">
-            <input type="button"  style="color: black;" value= "a)No sabes qué hacer ya que
+            <img class="mx-auto " src="img/dibujos/pregunta-c.png" alt="">
+            <input id="colorSignala" type="button"  style="color: black;" value= "a)No sabes qué hacer ya que
        te sientes un poco culpable." data-toggle="modal" data-target="#modalIncorrecto">
             <p class="text-muted"></p>
           </div>
@@ -270,17 +354,17 @@
         <div class="col-sm-4">
           <div class="team-member">
 
-            <img class="mx-auto " src="img/dibujos/pregunta-b.png" alt="">
-            <input type="button" style="color: black;" value="b)No le cuentan a nadie para que no 
+            <img class="mx-auto " src="img/dibujos/pregunta-a.png" alt="">
+            <input id="colorSignalb" type="button" style="color: black;" value="b)No le cuentan a nadie para que no 
     te echen la culpa" data-toggle="modal" data-target="#modalIncorrecto">
             <p class="text-muted"></p>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto " src="img/dibujos/pregunta-c.png" alt="">
-            <input type="button" style="color: black;" value="c)Buscas a quien contarle lo sucedido
-       ya que piensas que no es tu culpa." data-toggle="modal" data-target="#modalCorrecto">
+            <img class="mx-auto " src="img/dibujos/pregunta-b.png" alt="">
+            <input id="colorSignalc" type="button" style="color: black;" value="c)Buscas a quien contarle lo sucedido
+       ya que piensas que no es tu culpa." data-toggle="modal" data-target="#modalCorrecto5">
             <p class="text-muted"></p>
           
         </div>
@@ -446,222 +530,251 @@
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">CARING CHILDREN</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: Mayo 2019</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Información</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">CARING CHILDREN</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: Mayo 2019</li>
+                    <li>Client:Nadie</li>
+                    <li>Category: Información</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
+  
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Explore</li>
+                    <li>Category: Graphic Design</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
+  
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Finish</li>
+                    <li>Category: Identity</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
+  
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Lines</li>
+                    <li>Category: Branding</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
+  
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 clax                       ss="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 clax                       ss="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Southwest</li>
+                    <li>Category: Website Design</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
+  
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Window</li>
+                    <li>Category: Photography</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+  
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      var socket = io.connect('http://192.168.1.211:5000');
+      socket.on('connect',function(){
+          socket.emit('evento1',{data:'sdfadsfasdf'});
+           
+            
+      });
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
-
-</body>
-
-</html>
+      socket.on('my response', function(msg) {
+          // Recibimos los nuevos mensajes y los añadimos a nuestro array
+             document.getElementById("colorSignal").innerHTML=msg.data;
+             if (msg.data==22)
+                  {
+                    document.getElementById("colorSignala").click() 
+                   }
+              if (msg.data==21)
+                  {
+                    document.getElementById("colorSignalb").click() 
+                   }
+              if (msg.data==20)
+                  {
+                    document.getElementById("colorSignalc").click()  
+                     
+                   }
+             
+          });
+  </script>
+  
+  </body>
+  
+  </html>
+  
